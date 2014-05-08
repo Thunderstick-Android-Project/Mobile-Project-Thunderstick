@@ -11,6 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class dimen {
+        public static final int abc_action_bar_progress_bar_size=0x7f040002;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Example customization of dimensions originally defined in res/values/dimens.xml
@@ -23,9 +24,37 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int landingpage=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int Item=0x7f080001;
+        public static final int Shedule=0x7f08000c;
+        public static final int action_settings=0x7f08001b;
+        public static final int ed_amt=0x7f080014;
+        public static final int ed_btndelete=0x7f08000b;
+        public static final int ed_btndone=0x7f080006;
+        public static final int ed_btndone2=0x7f08001a;
+        public static final int ed_btnitemimg=0x7f080008;
+        public static final int ed_checkafter=0x7f080010;
+        public static final int ed_checkmor=0x7f08000f;
+        public static final int ed_checknight=0x7f080011;
+        public static final int ed_hrs=0x7f080019;
+        public static final int ed_itemimage=0x7f080003;
+        public static final int ed_itemname=0x7f080002;
+        public static final int ed_itemqty=0x7f080004;
+        public static final int ed_itemrol=0x7f080005;
+        public static final int ed_meals=0x7f080016;
+        public static final int ed_radioaft=0x7f080018;
+        public static final int ed_radiobef=0x7f080017;
+        public static final int ed_radiotime=0x7f08000e;
+        public static final int ed_radiotimeg=0x7f080012;
+        public static final int ed_txtamt=0x7f080015;
+        public static final int ed_txthr=0x7f080013;
+        public static final int ed_txtitemname=0x7f080007;
+        public static final int ed_txtname=0x7f08000d;
+        public static final int ed_txtqty=0x7f080009;
+        public static final int ed_txtrol=0x7f08000a;
+        public static final int tabhost=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
