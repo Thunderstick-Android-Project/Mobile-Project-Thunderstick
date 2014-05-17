@@ -2,6 +2,8 @@ package com.thunderstick.medreminder;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -9,7 +11,7 @@ import android.widget.RadioButton;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
-public class Edititem extends Activity {
+public class Edititem extends Activity implements OnClickListener{
 
 	TabHost th;
 	TabSpec specs;
@@ -59,6 +61,23 @@ public class Edititem extends Activity {
 		specs.setContent(R.id.Shedule);
 		specs.setIndicator("Shedule");
 		th.addTab(specs);
+		
+		btndone.setOnClickListener(this);
+	}
+
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+		switch (v.getId()) {
+		case R.id.ed_btndone:
+			
+			break;
+
+		
+		}
+		
 	}
 
 }
