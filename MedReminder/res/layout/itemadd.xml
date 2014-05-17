@@ -120,21 +120,21 @@
                         android:id="@+id/Shedule"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical" >
-
-                        <TextView
-                            android:id="@+id/ad_txtname"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Med name"
-                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                        android:orientation="horizontal" >
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="295dp"
-                            android:layout_weight="0.54" >
+                            android:layout_width="155dp"
+                            android:layout_height="406dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/ad_txtname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:text="Med name"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
 
                             <RadioGroup
                                 android:id="@+id/ad_radioGroup1"
@@ -158,31 +158,35 @@
                                     android:text="Time Gap" />
                             </RadioGroup>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="20dp"
+                            <TextView
+                                android:id="@+id/ad_amt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
                                 android:layout_marginTop="20dp"
-                                android:orientation="vertical" >
+                                android:text="Amount" />
 
-                                <TextView
-                                    android:id="@+id/ad_amt"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
-                                    android:layout_marginTop="20dp"
-                                    android:text="Amount" />
+                            <EditText
+                                android:id="@+id/ad_txtamnt"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:inputType="number" >
+                            </EditText>
+                        </LinearLayout>
 
-                                <EditText
-                                    android:id="@+id/ad_txtamnt"
-                                    android:layout_width="72dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
-                                    android:inputType="number" >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="420dp"
+                            android:orientation="vertical" >
 
-                                    <requestFocus />
-                                </EditText>
-                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/ad_txtrdioresult"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="110dp"
+                                android:layout_weight="0.03"
+                                android:hint="Select your time manage" />
                         </LinearLayout>
                     </LinearLayout>
                 </FrameLayout>
