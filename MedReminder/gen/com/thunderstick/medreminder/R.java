@@ -34,7 +34,7 @@ public final class R {
     public static final class id {
         public static final int Item=0x7f090002;
         public static final int Shedule=0x7f09000b;
-        public static final int action_settings=0x7f09002b;
+        public static final int action_settings=0x7f09002c;
         public static final int ad_amt=0x7f090010;
         public static final int ad_btnitemimg=0x7f090008;
         public static final int ad_itemimage=0x7f090004;
@@ -73,6 +73,7 @@ public final class R {
         public static final int ed_txtitemname=0x7f090018;
         public static final int ed_txtname=0x7f09001d;
         public static final int ed_txtqty=0x7f09001a;
+        public static final int ed_txtrdioresult=0x7f09002b;
         public static final int ed_txtrol=0x7f09001b;
         public static final int scrollView1=0x7f090001;
         public static final int tabhost=0x7f090000;

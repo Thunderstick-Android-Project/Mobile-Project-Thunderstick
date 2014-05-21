@@ -265,6 +265,19 @@
                 
                     </LinearLayout>
                     
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="420dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/ed_txtrdioresult"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="110dp"
+                                android:layout_weight="0.03"
+                                android:hint="Select your time manage" />
+                        </LinearLayout>
 
                 </LinearLayout>
 
