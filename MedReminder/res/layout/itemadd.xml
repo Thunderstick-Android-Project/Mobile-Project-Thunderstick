@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/addpage"
     android:orientation="vertical" >
 
     <TabHost
@@ -34,86 +35,49 @@
                         android:id="@+id/Item"
                         android:layout_width="match_parent"
                         android:layout_height="286dp"
-                        android:orientation="horizontal" >
+                        android:orientation="vertical" >
 
-                        <LinearLayout
-                            android:layout_width="146dp"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical" >
+                        <EditText
+                            android:id="@+id/ad_txtitemname"
+                            android:layout_width="242dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:ems="10"
+                            android:hint="Medicine Name"
+                            android:inputType="textPersonName" >
 
-                            <TextView
-                                android:id="@+id/ad_itemname"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dip"
-                                android:layout_marginTop="30dip"
-                                android:text="Item Name"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <requestFocus />
+                        </EditText>
 
-                            <TextView
-                                android:id="@+id/ad_itemimage"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dip"
-                                android:layout_marginTop="20dip"
-                                android:text="Image"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        <Button
+                            android:id="@+id/ad_btnitemimg"
+                            android:layout_width="242dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Take a Photo" />
 
-                            <TextView
-                                android:id="@+id/ad_itemqty"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dip"
-                                android:layout_marginTop="90dip"
-                                android:text="Quantity"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        <EditText
+                            android:id="@+id/ad_txtqty"
+                            android:layout_width="242dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:ems="10"
+                            android:hint="Medicine Quantity"
+                            android:inputType="number" />
 
-                            <TextView
-                                android:id="@+id/ad_itemrol"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dip"
-                                android:layout_marginTop="20dip"
-                                android:text="Re-Order Level"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical" >
-
-                            <EditText
-                                android:id="@+id/ad_txtitemname"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="20dip"
-                                android:inputType="textPersonName" >
-
-                                <requestFocus />
-                            </EditText>
-
-                            <Button
-                                android:id="@+id/ad_btnitemimg"
-                                android:layout_width="wrap_content"
-                                android:layout_height="80dp"
-                                android:layout_marginLeft="10dip"
-                                android:layout_marginTop="20dip"
-                                android:text="Take a Photo" />
-
-                            <EditText
-                                android:id="@+id/ad_txtqty"
-                                android:layout_width="82dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="20dip"
-                                android:inputType="number" />
-
-                            <EditText
-                                android:id="@+id/ad_txtrol"
-                                android:layout_width="82dp"
-                                android:layout_height="wrap_content"
-                                android:inputType="number" />
-                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/ad_txtrol"
+                            android:layout_width="242dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:ems="10"
+                            android:hint="Medicine Re-Order Level"
+                            android:inputType="number" />
+                        
                     </LinearLayout>
 
                     <LinearLayout

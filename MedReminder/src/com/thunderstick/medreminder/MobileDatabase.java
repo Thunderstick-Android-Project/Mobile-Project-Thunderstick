@@ -19,6 +19,9 @@ public class MobileDatabase {
 	public static final String KEY_ROL = "rol";
 	public static final String KEY_ADDDATE = "adddate";
 	public static final String KEY_MEAL = "meal";
+	public static final String KEY_SESSION = "session";
+	public static final String KEY_GAP = "gap";
+	public static final String KEY_AMOUNT = "amount";
 	
 	private static final String DATABASE_NAME = "MedReminder";
 	private static final String DATABASE_TABLE = "item";
@@ -70,7 +73,7 @@ public class MobileDatabase {
 		 ourHelper.close();
 	 }
 	
-	public long insertNewItem(String medname, String qty, String rol, String adddate, String meal) {
+	public long insertNewItem(String medname, Integer qty, Integer rol, String adddate, String meal) {
 		// TODO Auto-generated method stub
 		ContentValues cv = new ContentValues();
 		cv.put(KEY_MEDNAME, medname);
