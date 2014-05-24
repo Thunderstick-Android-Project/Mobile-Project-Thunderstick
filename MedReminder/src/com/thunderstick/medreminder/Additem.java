@@ -305,6 +305,7 @@ public class Additem extends Activity {
 					db.open();
 
 					db.insertNewItem(mdname, quty, reol, adddate, meal);
+					db.insertNewSchedule(mdname, session, tmgap, amount);
 
 					db.close();
 				} catch (Exception e) {

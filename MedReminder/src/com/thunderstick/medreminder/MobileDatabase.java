@@ -50,6 +50,14 @@ public class MobileDatabase {
 					KEY_ADDDATE + "TEXT NOT NULL," +
 					KEY_MEAL + "TEXT);"
 			);	
+			
+			db.execSQL("CREATE TABLE " + DATABASE_TABLE + " (" +
+					KEY_ROWID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+					KEY_MEDNAME + " TEXT NOT NULL, " +
+					KEY_SESSION + " TEXT," +
+					KEY_GAP + "TEXT," +
+					KEY_AMOUNT + "INTEGER NOT NULL);"
+			);	
 		}
 		
 		@Override
@@ -81,6 +89,17 @@ public class MobileDatabase {
 		cv.put(KEY_ROL, rol);
 		cv.put(KEY_ADDDATE, adddate);
 		cv.put(KEY_MEAL, meal);
+		return ourDatabase.insert(DATABASE_TABLE, null, cv);
+		
+	}
+	
+	public long insertNewSchedule(String medname, String session, String gap, Integer amount) {
+		// TODO Auto-generated method stub
+		ContentValues cv = new ContentValues();
+		cv.put(KEY_MEDNAME, medname);
+		cv.put(KEY_SESSION, session);
+		cv.put(KEY_GAP, gap);
+		cv.put(KEY_AMOUNT, amount);
 		return ourDatabase.insert(DATABASE_TABLE, null, cv);
 		
 	}
