@@ -152,14 +152,13 @@
                         android:layout_height="410dp"
                         android:orientation="vertical" >
 
-                        <EditText
-                            android:id="@+id/ed_txtname"
+                        <TextView
+                            android:id="@+id/ed_name"
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp" >
+                            android:layout_marginTop="20dp" />
 
-                            <requestFocus />
-                        </EditText>
+                            
 
                         <RadioButton
                             android:id="@+id/ed_radiotime"

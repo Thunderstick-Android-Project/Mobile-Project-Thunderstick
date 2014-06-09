@@ -62,6 +62,7 @@ public final class R {
         public static final int ed_itemqty=0x7f090011;
         public static final int ed_itemrol=0x7f090012;
         public static final int ed_meals=0x7f090022;
+        public static final int ed_name=0x7f090019;
         public static final int ed_radioaft=0x7f090024;
         public static final int ed_radiobef=0x7f090023;
         public static final int ed_radiotime=0x7f09001a;
@@ -69,7 +70,6 @@ public final class R {
         public static final int ed_txtamt=0x7f090021;
         public static final int ed_txthr=0x7f09001f;
         public static final int ed_txtitemname=0x7f090014;
-        public static final int ed_txtname=0x7f090019;
         public static final int ed_txtqty=0x7f090016;
         public static final int ed_txtrdioresult=0x7f090027;
         public static final int ed_txtrol=0x7f090017;
