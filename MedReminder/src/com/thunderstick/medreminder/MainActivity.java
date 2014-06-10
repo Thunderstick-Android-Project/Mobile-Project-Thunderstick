@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
 			}
 				finally{
 				
-					Intent openStartingPoint = new Intent("com.thunderstick.medreminder.Additem");
+					Intent openStartingPoint = new Intent("com.thunderstick.medreminder.Rotator");
 					startActivity(openStartingPoint);
 			}
 			}

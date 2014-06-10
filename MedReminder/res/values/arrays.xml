@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<array name="entries">
+		<item>@drawable/cat</item>		
+		<item>@drawable/hippo</item> 		
+		<item>@drawable/monkey</item>		
+		<item>@drawable/mouse</item>		
+		<item>@drawable/panda</item>			
+	</array>	
+	<array name="names">
+	    <item>Additem</item>
+	    <item>Edititem</item>
+	    <item>Settings</item>
+	    <item>Items</item>
+	    <item>About</item>
+	</array>
+</resources>
