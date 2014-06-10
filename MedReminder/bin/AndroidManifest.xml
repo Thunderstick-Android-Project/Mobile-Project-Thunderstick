@@ -40,11 +40,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
          <activity
             android:name=".Setting"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.thunderstick.medreminder.Setting" />
+=======
+        
+         <activity
+            android:name=".Rotator"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.thunderstick.medreminder.Rotator" />
+>>>>>>> bb3a4b17e96daed37f93beb01f101b98e97fb5cb
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
