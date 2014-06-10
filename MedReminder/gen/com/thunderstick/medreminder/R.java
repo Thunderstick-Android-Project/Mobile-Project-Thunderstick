@@ -11,6 +11,7 @@ public final class R {
     public static final class array {
         public static final int checkbx=0x7f060001;
         public static final int colors_array=0x7f060000;
+        public static final int language=0x7f060003;
         public static final int meals=0x7f060002;
     }
     public static final class attr {
@@ -29,14 +30,15 @@ public final class R {
     }
     public static final class drawable {
         public static final int addpage=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int icon=0x7f020002;
-        public static final int landingpage=0x7f020003;
+        public static final int arrow=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int icon=0x7f020003;
+        public static final int landingpage=0x7f020004;
     }
     public static final class id {
         public static final int Item=0x7f090002;
         public static final int Shedule=0x7f090007;
-        public static final int action_settings=0x7f090029;
+        public static final int action_settings=0x7f090030;
         public static final int ad_amt=0x7f09000c;
         public static final int ad_btnitemimg=0x7f090004;
         public static final int ad_radioGroup1=0x7f090009;
@@ -48,6 +50,8 @@ public final class R {
         public static final int ad_txtqty=0x7f090005;
         public static final int ad_txtrdioresult=0x7f09000e;
         public static final int ad_txtrol=0x7f090006;
+        public static final int button2=0x7f09002d;
+        public static final int conno=0x7f09002c;
         public static final int ed_amt=0x7f090020;
         public static final int ed_btndelete=0x7f090018;
         public static final int ed_btndone=0x7f090013;
@@ -73,14 +77,20 @@ public final class R {
         public static final int ed_txtqty=0x7f090016;
         public static final int ed_txtrdioresult=0x7f090027;
         public static final int ed_txtrol=0x7f090017;
+        public static final int lang=0x7f09002e;
+        public static final int name=0x7f09002b;
         public static final int progressBar1=0x7f090028;
         public static final int scrollView1=0x7f090001;
         public static final int tabhost=0x7f090000;
+        public static final int textView1=0x7f090029;
+        public static final int textView2=0x7f09002a;
+        public static final int textView3=0x7f09002f;
     }
     public static final class layout {
         public static final int itemadd=0x7f030000;
         public static final int itemedit=0x7f030001;
         public static final int main=0x7f030002;
+        public static final int setting=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f080000;

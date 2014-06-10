@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <string name="app_name">MedReminder</string>
     <string name="hello_world">Hello world!</string>
@@ -27,5 +27,12 @@
         <item >Before</item>
         
     </string-array>
+     <string-array name="language">
+        <item >ENGLISH</item>
+        <item >SIGHALA</item>
+        <item >TAMIL</item>
+    </string-array>
+    
+    
 
 </resources>
