@@ -6,17 +6,19 @@ import java.util.Calendar;
 import com.thunderstick.medreminder.MobileDatabase;
 import com.thunderstick.medreminder.Additem;
 
-import android.R.integer;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.SparseBooleanArray;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
@@ -28,13 +30,13 @@ public class Additem extends Activity {
 	TabSpec specs;
 
 	EditText itname, qty, rol, amnt;
-	Button imagebtn;
+	ImageView imagebtn;
 	TextView itmnm, tmerslt;
 	RadioButton tmeslt, tmegap;
 
 	int val;
 	String date, mrng, afnn, nght, sess;
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -59,7 +61,7 @@ public class Additem extends Activity {
 		rol = (EditText) findViewById(R.id.ad_txtrol);
 		amnt = (EditText) findViewById(R.id.ad_txtamnt);
 
-		imagebtn = (Button) findViewById(R.id.ad_btnitemimg);
+		imagebtn = (ImageView) findViewById(R.id.ad_photoimg);
 
 		itmnm = (TextView) findViewById(R.id.ad_txtname);
 		tmerslt = (TextView) findViewById(R.id.ad_txtrdioresult);
@@ -75,7 +77,16 @@ public class Additem extends Activity {
 
 	    date = (""+mDay+"/"+mHour+"/"+mMinute+"");
 	    //itmnm.setText(""+date);
-
+	    
+	    imagebtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				itname.setText("abc");
+				
+			}
+		});
 		tmegap.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -332,5 +343,18 @@ public class Additem extends Activity {
 		});
 		
 	}
+	
+	 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+	      // TODO Auto-generated method stub
+	      super.onActivityResult(requestCode, resultCode, data);
+	      Bitmap bp = (Bitmap) data.getExtras().get("data");
+	      imagebtn.setImageBitmap(bp);
+	   }
+	 
+	 public boolean onCreateOptionsMenu(Menu menu) {
+	      // Inflate the menu; this adds items to the action bar if it is present.
+	      getMenuInflater().inflate(R.menu.main, menu);
+	      return true;
+	   }
 
 }

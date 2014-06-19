@@ -32,6 +32,7 @@ public class Setting extends Activity    {
 		personname=(EditText)findViewById(R.id.name);
 		contacte=(EditText)findViewById(R.id.conno);
 		lanuage=(ImageButton)findViewById(R.id.lang);
+		langselection=(TextView)findViewById(R.id.textView1);
 		
 		lanuage.setOnClickListener(new OnClickListener() {
 			

@@ -2,160 +2,165 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/addpage"
     android:orientation="vertical" >
 
-    <TabHost
-        android:id="@+id/tabhost"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
         <ScrollView
-            android:id="@+id/scrollView1"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="450dp"
+            android:orientation="vertical" >
 
-            <LinearLayout
+            <TabHost
+                android:id="@+id/tabhost"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
+                android:layout_height="match_parent" >
 
-                <TabWidget
-                    android:id="@android:id/tabs"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-                </TabWidget>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
 
-                <FrameLayout
-                    android:id="@android:id/tabcontent"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-
-                    <LinearLayout
-                        android:id="@+id/Item"
+                    <TabWidget
+                        android:id="@android:id/tabs"
                         android:layout_width="match_parent"
-                        android:layout_height="286dp"
-                        android:orientation="vertical" >
+                        android:layout_height="wrap_content" >
+                    </TabWidget>
 
-                        <EditText
-                            android:id="@+id/ad_txtitemname"
-                            android:layout_width="242dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginTop="10dp"
-                            android:ems="10"
-                            android:hint="Medicine Name"
-                            android:inputType="textPersonName" >
-
-                            <requestFocus />
-                        </EditText>
-
-                        <Button
-                            android:id="@+id/ad_btnitemimg"
-                            android:layout_width="242dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Take a Photo" />
-
-                        <EditText
-                            android:id="@+id/ad_txtqty"
-                            android:layout_width="242dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginTop="20dp"
-                            android:ems="10"
-                            android:hint="Medicine Quantity"
-                            android:inputType="number" />
-
-                        <EditText
-                            android:id="@+id/ad_txtrol"
-                            android:layout_width="242dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginTop="20dp"
-                            android:ems="10"
-                            android:hint="Medicine Re-Order Level"
-                            android:inputType="number" />
-                        
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/Shedule"
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
+                        android:layout_height="match_parent"  >
 
                         <LinearLayout
-                            android:layout_width="155dp"
-                            android:layout_height="406dp"
+                            android:id="@+id/Item"
+                            android:layout_width="match_parent"
+                            android:layout_height="438dp"
+                            android:background="@drawable/addpage"
                             android:orientation="vertical" >
-
-                            <TextView
-                                android:id="@+id/ad_txtname"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="20dp"
-                                android:text="Med name"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                            <RadioGroup
-                                android:id="@+id/ad_radioGroup1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" >
-
-                                <RadioButton
-                                    android:id="@+id/ad_radiotime"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="20dp"
-                                    android:layout_marginTop="30dp"
-                                    android:checked="true"
-                                    android:text="Time Slot" />
-
-                                <RadioButton
-                                    android:id="@+id/ad_radiotimegap"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="20dp"
-                                    android:text="Time Gap" />
-                            </RadioGroup>
-
-                            <TextView
-                                android:id="@+id/ad_amt"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="30dp"
-                                android:layout_marginTop="20dp"
-                                android:text="Amount" />
 
                             <EditText
-                                android:id="@+id/ad_txtamnt"
-                                android:layout_width="72dp"
+                                android:id="@+id/ad_txtitemname"
+                                android:layout_width="242dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="30dp"
-                                android:inputType="number" >
+                                android:layout_marginTop="40dp"
+                                android:ems="10"
+                                android:hint="Medicine Name"
+                                android:inputType="textPersonName" >
+
+                                <requestFocus />
                             </EditText>
+
+                            <ImageView
+                                android:id="@+id/ad_photoimg"
+                                android:layout_width="242dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@android:drawable/ic_menu_camera" />
+
+                            <EditText
+                                android:id="@+id/ad_txtqty"
+                                android:layout_width="242dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="20dp"
+                                android:ems="10"
+                                android:hint="Medicine Quantity"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/ad_txtrol"
+                                android:layout_width="242dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="20dp"
+                                android:ems="10"
+                                android:hint="Medicine Re Order Level"
+                                android:inputType="number" />
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/Shedule"
                             android:layout_width="match_parent"
-                            android:layout_height="420dp"
-                            android:orientation="vertical" >
+                            android:layout_height="438dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/addpage" >
 
-                            <TextView
-                                android:id="@+id/ad_txtrdioresult"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="110dp"
-                                android:layout_weight="0.03"
-                                android:hint="Select your time manage" />
+                            <LinearLayout
+                                android:layout_width="155dp"
+                                android:layout_height="406dp"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/ad_txtname"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="40dp"
+                                    android:text="Med name"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <RadioGroup
+                                    android:id="@+id/ad_radioGroup1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" >
+
+                                    <RadioButton
+                                        android:id="@+id/ad_radiotime"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="30dp"
+                                        android:checked="true"
+                                        android:text="Time Slot" />
+
+                                    <RadioButton
+                                        android:id="@+id/ad_radiotimegap"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="Time Gap" />
+                                </RadioGroup>
+
+                                <TextView
+                                    android:id="@+id/ad_amt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Amount" />
+
+                                <EditText
+                                    android:id="@+id/ad_txtamnt"
+                                    android:layout_width="72dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:inputType="number" >
+                                </EditText>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="420dp"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/ad_txtrdioresult"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="110dp"
+                                    android:layout_weight="0.03"
+                                    android:hint="Select your time manage" />
+                            </LinearLayout>
                         </LinearLayout>
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-        </ScrollView>
-    </TabHost>
-
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -21,16 +21,18 @@ public class MainActivity extends Activity {
 					ex.printStackTrace();
 			}
 				finally{
-				
-<<<<<<< HEAD
-					Intent openStartingPoint = new Intent("com.thunderstick.medreminder.Setting");
-=======
-					Intent openStartingPoint = new Intent("com.thunderstick.medreminder.Rotator");
->>>>>>> bb3a4b17e96daed37f93beb01f101b98e97fb5cb
-					startActivity(openStartingPoint);
+					//Intent openStartingPoint = new Intent("com.thunderstick.medreminder.Setting");
+					Intent openStrtngPoint = new Intent("com.thunderstick.medreminder.Rotator");
+					startActivity(openStrtngPoint);
 			}
 			}
 		};
 		timer.start();
+	}
+    @Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		finish();
+		super.onPause();
 	}
 }
